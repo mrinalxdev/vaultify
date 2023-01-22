@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #AEE2FF;
+}
+header {
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 3rem;
+}
+.card{
+    background-color: #fff;
+    margin: auto;
+    width: 500px;
+    height: 770px;
+    border: 1px solid #000;
+}
+.card .img{
+    width: 100%;
+}
+.card .img img{
+    width: 500px;
+}
+.card .txt{
+    padding: 5px;
+    text-align: center;
+    font-family: sans-serif;
+}
+.txt h1{
+    margin: 1rem 0;
+}
+.txt p{
+    color: grey;
+    font-family: sans-serif;
+}
+
+/* Plan Section  */
+.plan {
+    max-width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    background-color: #F9F9F9;
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+.plan img {
+    width: 30px;
+    padding: 5px;
+}
+.plan .img-corner {
+    border-radius: 50px;
+    background-color: lightblue;
+}
