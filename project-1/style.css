@@ -28,7 +28,7 @@ header {
     text-align: center;
     font-family: sans-serif;
 }
-.txt h1{
+.card .txt h1{
     margin: 1rem 0;
 }
 .txt p{
@@ -55,4 +55,61 @@ header {
 .plan .img-corner {
     border-radius: 50px;
     background-color: lightblue;
+}
+.txt-corner span{
+    margin: 20px 0;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.txt-corner p {
+    font-size: 16px;
+}
+.btn-corner button {
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 12px;
+    border: 1px solid;
+    background-color: #5BC0F8;
+    color: #fff;
+    transition: 0.2s ease;
+}
+.btn-corner button:hover {
+    background-color: #0081C9;
+
+}
+/* Button Section  */
+.btns{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+.btns button{
+    padding: 20px 5px;
+    border-radius: 10px;
+}
+.btns .proceed{
+    background-color: #144272;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    box-shadow: 10px 18px 47px 3px rgba(20,66,114,0.52);
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.btns .proceed:hover {
+    background-color: #0A2647;
+    box-shadow: 10px 18px 47px 3px rgba(20,66,114,0.52);
+}
+.btns .cancel {
+    border: none;
+    background-color: transparent;
+    color: grey;
+    font-family: sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.btns .cancel:hover {
+    border: 1px solid;
 }
