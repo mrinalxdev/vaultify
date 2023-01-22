@@ -15,7 +15,8 @@ header {
     margin: auto;
     width: 500px;
     height: 770px;
-    border: 1px solid #000;
+    border-radius: 20px;
+    overflow: hidden;
 }
 .card .img{
     width: 100%;
