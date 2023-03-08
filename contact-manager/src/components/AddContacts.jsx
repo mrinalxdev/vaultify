@@ -1,12 +1,14 @@
 import React from 'react'
 
-const AddContacts = () => {
+class AddContacts extends React.Component {
   state = {
     name : "",
     email : "",
   }
-  return (
-    <div className="ui main">
+
+  render(){
+    return(
+      <div className="ui main">
       <h2>Add Contacts </h2>
       <form className="ui form">
         <div className="field">
@@ -34,7 +36,8 @@ const AddContacts = () => {
         <button className='ui button black'>Add</button>
       </form>
     </div>
-  )
+    )
+  }
 }
 
 export default AddContacts
