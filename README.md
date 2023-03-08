@@ -1,3 +1,3 @@
 # Experimental Language Projects
 
-Languages jsut for experimenting 😄
+Small Projects to brush up on my skills 😃
