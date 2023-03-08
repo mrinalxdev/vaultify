@@ -5,6 +5,7 @@ import ContactList from './components/ContactList'
 
 
 function App() {
+  const [contacts, setContacts] = useState([])
 
   const contacts = [
     {
