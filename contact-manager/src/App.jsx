@@ -41,13 +41,9 @@ function App() {
       <BrowserRouter>
         <Routes>
 
-        <Route path='/add' exact element = {
-          <AddContacts addContactHandler={addContactHandler}/>
-        } />
+        <Route path='/add' exact element={<AddContacts addContactHandler={addContactHandler}/>} />
 
-        <Route path='/' element={
-          <ContactList contacts={contacts} getContactId = {removeContactHnadler}/>
-        } />
+        <Route path='/' exact element={<ContactList contacts={contacts} getContactId = {removeContactHnadler}/>} />
 
         </Routes> 
       </BrowserRouter>
