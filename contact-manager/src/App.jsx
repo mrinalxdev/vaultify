@@ -41,7 +41,7 @@ function App() {
       <BrowserRouter>
         <Routes>
 
-        <Route path='/add' element = {
+        <Route path='/add' exact element = {
           <AddContacts addContactHandler={addContactHandler}/>
         } />
 

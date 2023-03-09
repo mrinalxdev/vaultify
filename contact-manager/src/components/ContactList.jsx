@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import ContactCard from './ContactCard'
 
 const ContactList = (props) => {
@@ -15,7 +16,7 @@ const ContactList = (props) => {
       email : 'hollaMrinal',
     },
     {
-      id : '1',
+      id : '2',
       name : 'mrinal',
       email : 'hollaMrinal',
     }
@@ -28,10 +29,23 @@ const ContactList = (props) => {
   })
 
   return (
-    <div className='ui celled list'>
-      {renderContactList}
+    <>
+    <div className="main">
+      <div style={{display:"flex", justifyContent: "space-between"}}>
+        <h2>ContactList</h2>
+
+        <Link to="/add">
+          <button className="ui button black right">Add Contact</button>
+        </Link>
+      </div>
+      <div className='ui celled list'>
+        {renderContactList}
+      </div>
     </div>
+
+    </>
   )
 }
+
 
 export default ContactList
