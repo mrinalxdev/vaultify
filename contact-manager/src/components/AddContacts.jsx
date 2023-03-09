@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 class AddContacts extends React.Component {
   state = {
     name : "",
@@ -15,7 +16,7 @@ class AddContacts extends React.Component {
     }
     this.props.addContactHandler(this.state)
     this.setState({name : "", email: ""})
-    console.log(this.state)
+    this.props.history.push("/") //Sends back to Homepage
   }
 
   render(){
