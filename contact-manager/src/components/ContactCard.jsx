@@ -10,7 +10,7 @@ const ContactCard = (props) => {
     <div className="item" style={{display:"flex", justifyContent:"space-between"}}>
       <div className="content">
       <img className='ui avatar image' src={user} alt="" />
-      <Link to={`/contact/${id}`}>
+      <Link to={{pathname:`/contact/${id}`, state:{contact: props.contact}}}>
         <div className="header">{name}</div>
         <div>{email}</div>
       </Link>

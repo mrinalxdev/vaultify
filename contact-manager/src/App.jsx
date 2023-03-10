@@ -47,6 +47,8 @@ function App() {
 
         <Route path='/' exact element={<ContactList contacts={contacts} getContactId = {removeContactHnadler}/>} />
 
+        <Route path='/contact/:id' element={<ContactDetail />} />
+
         </Routes> 
       </BrowserRouter>
     </div>
