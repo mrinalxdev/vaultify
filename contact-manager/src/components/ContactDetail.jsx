@@ -1,6 +1,7 @@
 import React from 'react'
 import user from '../images/user.jpg'
 import {Link} from 'react-router-dom'
+import { Button } from 'semantic-ui-react'
 
 const ContactDetail = (props) => {
     console.log(props)
@@ -22,9 +23,16 @@ const ContactDetail = (props) => {
                 </div>
             </div>
         </div>
+
+        <div className="center-div">
+            <Link to='/'>
+                <Button secondary>
+                    Back    
+                </Button>      
+            </Link>
+        </div>
+
     </div>
-
-
   )
 }
 
