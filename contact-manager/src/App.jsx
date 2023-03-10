@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react'
+import {v4 as uuidV4} from "uuid"
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Header from './components/Header'
 import AddContacts from './components/AddContacts'
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import ContactList from './components/ContactList'
-import {v4 as uuidV4} from "uuid"
+import ContactDetail from './components/ContactDetail'
+
 
 
 function App() {
