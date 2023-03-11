@@ -15,6 +15,14 @@ function App() {
     setTodoList(newTodoList)
   }
 
+  const deleteTask = (taskName) => {
+    const newTodoList = todoList.filter((task) => {
+      return task !== taskName
+    })
+
+    setTodoList(newTodoList)
+  }
+
   return (
     <div className="app">
       <div className="addTask">
@@ -26,7 +34,7 @@ function App() {
         {todoList.map((task) => {
           return <div className = "max-w-[150px] border-3 border-black bg-black text-white px-3 py-6 m-5 flex justify-between items-center">
             <h1>{task}</h1>
-            <button>X</button>
+            <button onClick={() => deleteTask(task)}>X</button>
           </div>
         })}
       </div>
