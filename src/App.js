@@ -6,7 +6,7 @@ function App() {
       <h1>
         $400 <span>.00</span>
       </h1>
-      <form>
+      <form className="head">
         <div className='basics'>
           <input type="text" placeholder='+200 new Sony Tv' />
           <input type="datetime-local" />
@@ -23,18 +23,18 @@ function App() {
             <div className="description">It was time for new tv</div>
           </div>
           <div className="right">
-            <div className="price">$500</div>
+            <div className="price red">-$500</div>
             <div className="datetime">2023-12-18 15:23</div>
           </div>
         </div>
 
         <div className="transaction">
           <div className="left">
-            <div className="name">New Samsung TV</div>
+            <div className="name">A new Gig for the website development</div>
             <div className="description">It was time for new tv</div>
           </div>
           <div className="right">
-            <div className="price">$500</div>
+            <div className="price green">+$500</div>
             <div className="datetime">2023-12-18 15:23</div>
           </div>
         </div>
