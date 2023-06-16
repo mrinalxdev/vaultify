@@ -19,7 +19,7 @@ function App() {
       <div className="transactions">
         <div className="transaction">
           <div className="left">
-            <div className="name">New Samsung TV</div>
+            <div className="name">Jwellery for Mom</div>
             <div className="description">It was time for new tv</div>
           </div>
           <div className="right">
@@ -41,22 +41,22 @@ function App() {
 
         <div className="transaction">
           <div className="left">
-            <div className="name">New Samsung TV</div>
+            <div className="name">Reliance Stock Investment Return</div>
             <div className="description">It was time for new tv</div>
           </div>
           <div className="right">
-            <div className="price">$500</div>
+            <div className="price green">+$500</div>
             <div className="datetime">2023-12-18 15:23</div>
           </div>
         </div>
 
         <div className="transaction">
           <div className="left">
-            <div className="name">New Samsung TV</div>
+            <div className="name">New Iphone</div>
             <div className="description">It was time for new tv</div>
           </div>
           <div className="right">
-            <div className="price">$500</div>
+            <div className="price red">-$500</div>
             <div className="datetime">2023-12-18 15:23</div>
           </div>
         </div>

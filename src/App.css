@@ -51,12 +51,16 @@ form button {
   margin-top: 5px;
 }
 .transactions {
-  margin-top: 5px; 
+  margin-top: 15px; 
 }
 .transaction {
   display: flex;
   justify-content: space-between;
   padding: 5px 0;
+  border-top: 1px solid #30313d;
+}
+.transaction:first-child {
+  border: none;
 }
 .transaction .name {
   font-size: 1.2rem;
@@ -68,6 +72,13 @@ form button {
 .right {
   text-align: right;
 }
-.price {
-
+.price.green {
+  color: #1c1;
+}
+.price.red {
+  color: #c11;
+}
+.transaction .datetime {
+  font-size: .7rem;
+  color: #888;
 }
