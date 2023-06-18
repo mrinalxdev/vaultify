@@ -1,18 +1,32 @@
-import './App.css';
+import { useState } from "react";
+import "./App.css";
 
 function App() {
+  const [name, setName] = useState("");
+  const [date, setDate] = useState("");
+  const [description, setDescription] = useState("");
+
+  function addNewTransaction () {
+    console.log ("New Transaction Added")
+  }
+
   return (
     <main>
       <h1>
         $400 <span>.00</span>
       </h1>
-      <form className="head">
-        <div className='basics'>
-          <input type="text" placeholder='+200 new Sony Tv' />
-          <input type="datetime-local" />
+      <form className="head" onSubmit={addNewTransaction}>
+        <div className="basics">
+          <input
+            value={name}
+            onChange={(event) => setName(event.target.value)}
+            type="text"
+            placeholder="+200 new Sony Tv"
+          />
+          <input value={date} onChange={event=> setDate(event.target.value)} type="datetime-local" />
         </div>
-        <div className='description'>
-          <input type="text" placeholder='description' />
+        <div className="description">
+          <input type="text" placeholder="description" />
         </div>
         <button>Add New Transaction</button>
       </form>
