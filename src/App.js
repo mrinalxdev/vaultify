@@ -3,12 +3,21 @@ import "./App.css";
 
 function App() {
   const [name, setName] = useState("");
-  const [date, setDate] = useState("");
+  const [datetime, setDatetime] = useState("");
   const [description, setDescription] = useState("");
 
-  function addNewTransaction () {
-    const url = ''
-    fetch(url)
+  function addNewTransaction(event) {
+    event.preventDefault();
+    const url = process.env.REACT_APP_API_URL + "/transaction";
+    fetch(url, {
+      method: "POST",
+      headers: { "Content-type": "application/json" },
+      body: JSON.stringify({ name, description, datetime }),
+    }).then(response => {
+      response.json().then(json => {
+        console.log('result', json)
+      })
+    });
   }
 
   return (
@@ -24,9 +33,17 @@ function App() {
             type="text"
             placeholder="+200 new Sony Tv"
           />
-          <input value={date} onChange={event=> setDate(event.target.value)} type="datetime-local" />
+          <input
+            value={datetime}
+            onChange={(event) => setDatetime(event.target.value)}
+            type="datetime-local"
+          />
         </div>
-        <div className="description">
+        <div
+          className="description"
+          value={description}
+          onChange={(event) => setDescription(event.target.value)}
+        >
           <input type="text" placeholder="description" />
         </div>
         <button>Add New Transaction</button>
