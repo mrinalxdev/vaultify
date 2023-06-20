@@ -7,7 +7,8 @@ function App() {
   const [description, setDescription] = useState("");
 
   function addNewTransaction () {
-    console.log ("New Transaction Added")
+    const url = ''
+    fetch(url)
   }
 
   return (
