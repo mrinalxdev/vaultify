@@ -1,6 +1,8 @@
 # Vaultify
 
-p2p Folder documentation
+
+
+- ### p2p Folder documentation
 
 > transport.go
 
@@ -20,6 +22,11 @@ Topics in this Files are documentated here.
 - if 
 
 > handshake.go
+
 HandshakeFunc is ...
 
 Basically what handshake func is doing . Before establishing a connection there will be a handshake btw the peers . If the handshake is good then they will establish the connection. 
+
+> message.go 
+
+Message represents any arbitary data that is being sent over the each transport btw two nodes in the network
