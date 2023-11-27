@@ -33,3 +33,8 @@ Basically what handshake func is doing . Before establishing a connection there 
 > message.go 
 
 Message represents any arbitary data that is being sent over the each transport btw two nodes in the network
+
+
+> store.go 
+
+Content Addressable storage which can save anything in deep nested folder based on the transformation of the key . 
