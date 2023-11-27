@@ -19,7 +19,10 @@ Topics in this Files are documentated here.
 - conn is the underlying connection of the peer
 
 - If we dial and retrive a conn => outbound == true
-- if 
+
+- Close Implements the Peer interface
+
+- Consume func implements the Transport interface which will return readonly channel for reading the  incoming messages received from the another peer in the network
 
 > handshake.go
 
